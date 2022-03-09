@@ -6,9 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>email matching </title>
     <link rel="stylesheet" href="./bootstraps/bootstrap.min.css">
+
+    <style>
+        #email-incorrect-message{
+            display: none;
+        }
+        #email-correct-message{
+            display: none;
+        }
+
+    </style>
 </head>
 <body>
-    <h1 class="bg-danger">we are ready to developmenrt</h1>
+    <div class="container">
+        <h1 class=" mt-2 bg-info text-white text-center fw-bold p-4 rounded rounded-2">Enter Your Eamil</h1>
+    </div>
+    <div class="container d-flex flex-column flex-md-row justify-content-center">
+        <input class="w-50  d-block me-1 mt-sm-2 mt-md-0" type="text" name="" id="Email-input" placeholder = "Enter your email address"> 
+        <button id="submit" type="button" class="d-blocks btn mt-sm-2 mt-md-0 btn-outline-primary fw-bold">submit</button>
+    </div>
+
+    <div class="container w-50">
+        <h4 id="email-incorrect-message" class="mt-2 bg-danger text-white text-center fw-bold p-1 rounded rounded-3">please enter a correct email address</h4>
+        <h4 id="email-correct-message" class="mt-2 bg-success text-white text-center fw-bold p-1 rounded rounded-3">Email successfully registered</h4>
+    </div>
 
 
     <script src="./bootstraps/bootstrap.bundle.min.js"></script>
